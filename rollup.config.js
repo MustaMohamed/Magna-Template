@@ -60,13 +60,15 @@ export default {
 		commonjs({
 			include: 'node_modules/**',
 			namedExports: {
-				'./node_modules/react/react.js': [
-					'cloneElement',
-					'createElement',
-					'PropTypes',
-					'Children',
-					'Component'
-				],
+				// './node_modules/react/react.js': [
+				// 	'cloneElement',
+				// 	'createElement',
+				// 	'PropTypes',
+				// 	'Children',
+				// 	'Component'
+				// ],
+				'./node_modules/react/index.js': ['cloneElement', 'createElement', 'PropTypes', 'Children', 'Component', 'isValidElement', 'PureComponent'],
+				'./node_modules/react-dom/index.js': ['findDOMNode'],
 			}
 		}),
 		(process.env.NODE_ENV === 'production' && uglify({

@@ -1,0 +1,11 @@
+
+.logo {
+    letter-spacing: 3px;
+    text-transform: uppercase !important;
+} 
+.navItem {
+    padding-left: 15px !important;
+}
+.fixedMenu {
+    background-color: honeydew !important;
+}

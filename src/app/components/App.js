@@ -1,12 +1,18 @@
 import React from 'react';
-import style from '../css/style.css';
+import Footer from './layout/Footer';
+import PageHeader from './sections/Header';
+import { Container, Responsive } from 'semantic-ui-react';
+
+// css style
+// import style from '../css/style.css';
 
 class App extends React.Component {
 	render() {
 		return (
-			<div className={style.container}>
-				<h1>Hello the app template, Using <strong style={{ color: '#2980b9'}}>Rollup</strong> for building the project</h1>
-			</div>
+			<Container fluid>
+				<PageHeader />
+				<Footer />
+			</Container>
 		);
 	}
 }

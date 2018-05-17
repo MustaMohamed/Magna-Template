@@ -1,0 +1,38 @@
+footer {
+    min-height: 900px;
+    background-color: #f4f6f8;
+    padding-top: 40px;
+    color: #b2bec3;
+}
+.iconGroup, .links, footer p {
+    text-align: center;
+    margin-top: 40px;
+}
+.icon {
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+}
+.icon:hover {
+    background-color: #dfe6e9;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.links a {
+    text-decoration: none;
+    color: #b2bec3;
+    border-bottom: 2px dotted #dcdde1;
+    padding-bottom: 5px;
+    margin: 15px;
+}
+.links a:hover {
+    border: none;
+    color: #e84118;
+    transition: all 0.5s;
+}
+footer p span {
+    color: #636e72;
+    font-weight: 700;
+}

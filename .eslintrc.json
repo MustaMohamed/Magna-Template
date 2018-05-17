@@ -3,10 +3,10 @@
         "browser": true,
         "es6": true
     },
-    "globals": {
-        "ENV": true
-    },
-    "extends": "eslint:recommended",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
     "parserOptions": {
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
@@ -18,10 +18,6 @@
         "react"
     ],
     "rules": {
-        "indent": [
-            "error",
-            "tab"
-        ],
         "linebreak-style": [
             "error",
             "windows"
@@ -33,6 +29,7 @@
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "no-useless-escape": "off"
     }
 }

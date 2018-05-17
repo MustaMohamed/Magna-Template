@@ -1,12 +1,14 @@
 {
   "name": "Magna-Template",
   "version": "1.0.0",
-  "description": "react and rollup initial project template",
+  "description": "A basic react template using semantic ui react lib, rollup build tool.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
-    "watch": "rollup -c --watch"
+    "watch": "rollup -c --watch",
+    "reload": "livereload \"build/\"",
+    "dev": "concurrently --kill-others \"npm run watch\" \"npm run reload\""
   },
   "repository": {
     "type": "git",
@@ -32,9 +34,11 @@
     "babel-preset-es2015-rollup": "^3.0.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.16.0",
+    "concurrently": "^3.5.1",
     "cssnano": "^3.10.0",
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.7.0",
+    "livereload": "^0.7.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^11.1.0",
     "postcss-modules": "^1.1.0",
@@ -53,5 +57,8 @@
     "rollup-plugin-replace": "^1.1.1",
     "rollup-plugin-uglify": "^1.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react-icons": "^2.2.7",
+    "semantic-ui-react": "^0.80.0"
+  }
 }

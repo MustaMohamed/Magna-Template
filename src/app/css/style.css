@@ -1,10 +1,17 @@
+@import './components/layout/navbar.css';
+@import './components/layout/footer.css';
+@import './components/sections/header.css';
+
 * {
     box-sizing: border-box;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 .container {
     width: 80%;
-    text-align: center;
     margin:0 auto;
+}
+.clr {
+    clear: both;
 }

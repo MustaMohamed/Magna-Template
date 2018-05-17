@@ -1,0 +1,21 @@
+
+.heroHeader h1 {
+    font-size: 4em !important;
+    margin-top: 3em !important;
+    margin-bottom: 0 !important;
+}
+.heroHeader h2 {
+    font-size: 2em !important;
+    margin-top: 1.5em !important;
+}
+
+@media(max-width: 767px) {
+    .heroHeader h1 {
+        font-size: 2em !important;
+        margin-top: 1.5em !important;
+    }
+    .heroHeader h2 {
+        font-size: 1em !important;
+        margin-top: .7em !important;
+    }
+}
